@@ -1,0 +1,16 @@
+{
+  "name": "pulselive-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass -o css scss/main.scss",
+    "watch": "node-sass -o css scss/main.scss -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

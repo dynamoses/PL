@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Player stats card</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="player-stats-container">
+                <div class="player-stats-dropdown">
+                    <select class="select-player-list"></select>
+                </div>
+                <div class="player-image-container">
+                    <img class="player-image" src="">
+                </div>
+                <div class="player-stats">
+                    <div class="team-logo-container">
+                        <div data-team-id="21" class="team-logo"></div>
+                    </div>
+                    <div class="player-name"></div>
+                    <div class="player-position"></div>
+                    <div class="player-stats__item">
+                        <span>Appearances</span>
+                        <span class="score appearancesVal"></span>
+                    </div>
+                    <div class="player-stats__item">
+                        <span>Goals</span>
+                        <span class="score goalsVal"></span>
+                    </div>
+                    <div class="player-stats__item">
+                        <span>Assists</span>
+                        <span class="score assistsVal"></span>
+                    </div>
+                    <div class="player-stats__item">
+                        <span>Goals per match</span>
+                        <span class="score goalsPerMatchVal"></span>
+                    </div>
+                    <div class="player-stats__item">
+                        <span>Passes per minute</span>
+                        <span class="score passesPerMinVal"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script type="module" src="js/script.js"></script>
+    </body>
+</html>

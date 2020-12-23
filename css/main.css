@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+
+.section {
+  padding: 10px; }
+
+.player-stats-container {
+  width: 320px;
+  text-align: center;
+  border: 1px solid #c5c3c3;
+  border-radius: 3px; }
+  .player-stats-container .player-stats-dropdown {
+    padding: 10px;
+    position: relative; }
+    .player-stats-container .player-stats-dropdown .select-player-list {
+      background-color: #eaeaea;
+      width: 100%;
+      font-size: 1em;
+      padding: 10px;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
+    .player-stats-container .player-stats-dropdown::after {
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      border-width: 2px 2px 0 0;
+      border-style: solid;
+      content: '';
+      height: 8px;
+      width: 8px;
+      transform: translateY(-70%) rotate(-225deg); }
+  .player-stats-container .player-image-container {
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    background-image: url("../img/premier-league-bg.png");
+    background-size: 70%;
+    background-position: top right;
+    background-repeat: no-repeat; }
+    .player-stats-container .player-image-container .player-image {
+      width: 190px; }
+  .player-stats-container .player-stats {
+    text-align: left;
+    background-color: #ec0150;
+    color: #fff;
+    padding: 20px;
+    position: relative; }
+    .player-stats-container .player-stats .team-logo-container {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      right: 20px;
+      top: -40px;
+      padding: 10px;
+      border-radius: 50%;
+      background: #fff;
+      overflow: hidden; }
+      .player-stats-container .player-stats .team-logo-container .team-logo {
+        background-color: #fff;
+        background-image: url("../img/badges_sprite.png");
+        background-size: 1200%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%; }
+        .player-stats-container .player-stats .team-logo-container .team-logo[data-team-id="1"] {
+          background-position: -80px -78px; }
+        .player-stats-container .player-stats .team-logo-container .team-logo[data-team-id="11"] {
+          background-position: -640px -560px; }
+        .player-stats-container .player-stats .team-logo-container .team-logo[data-team-id="12"] {
+          background-position: -480px -640px; }
+        .player-stats-container .player-stats .team-logo-container .team-logo[data-team-id="21"] {
+          background-position: -400px -800px; }
+        .player-stats-container .player-stats .team-logo-container .team-logo[data-team-id="26"] {
+          background-position: 0 0; }
+    .player-stats-container .player-stats .player-name {
+      font-size: 1.2em; }
+    .player-stats-container .player-stats .player-position {
+      font-size: 0.9em; }
+    .player-stats-container .player-stats .player-name, .player-stats-container .player-stats .player-position {
+      margin-bottom: 10px; }
+    .player-stats-container .player-stats__item {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #eaeae8;
+      color: #240e28; }
+      .player-stats-container .player-stats__item:not(:last-child) {
+        margin-bottom: 5px; }
+      .player-stats-container .player-stats__item .score {
+        font-weight: bold; }
